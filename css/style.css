@@ -214,6 +214,7 @@ body {
     margin-bottom: 30px;
     display: block;
     width: 100%;
+    resize: none;
 }
 .form__buttons {
     display: flex;
@@ -229,4 +230,115 @@ body {
 }
 .social__link:first-child {
     margin-left: 0;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header-content__title {
+        font-size: 36px;
+    }
+    .card {
+        flex-basis: 48%;
+    }
+    .review-card {
+        flex-basis: 48%;
+    }
+    .review__card {
+        margin-bottom: 30px;
+    }
+    .card__image {
+        width: 100%;
+    }
+    .button {
+        font-size: 14px;
+        padding: 15px 40px;
+    }
+}
+@media (max-width: 990px) {
+    .container {
+        max-width: 760px;
+    }
+    .header-content {
+        flex-direction: column;
+    }
+    .header-content__description {
+        max-width: 500px;
+    }
+    .contacts {
+        flex-direction: column;
+    }
+    .contacts__form {
+        margin-bottom: 50px;
+    }
+    .review-card {
+        margin-right: 23px;
+    }
+    .review-card:last-child {
+        margin-right: 0;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    .top {
+        flex-direction: column;
+        min-height: 100px;
+    }
+    .header-content {
+        text-align: center;
+    }
+    .header-content__title {
+        font-size: 24px;
+    }
+    .header-content__description {
+        font-size: 14px;
+    }
+    .header-content__image {
+        max-width: 80%;
+    }
+    .card {
+        flex-basis: 100%;
+    }
+    .header {
+        padding: 25px 45px;
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .header__top {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 475px) {
+    .form__inputs {
+        flex-direction: column;
+    }
+    .form__input {
+        width: 100%;
+    }
+    .form__buttons {
+        flex-direction: column;
+    }
+    .form__button,
+    .contacts__form {
+        margin-bottom: 25px;
+    }
+    .input {
+        padding: 12px 20px;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
+    }
+    .nav-list__item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header__top {
+        margin-bottom: 10px;
+    }
 }
